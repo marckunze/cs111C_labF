@@ -7,7 +7,7 @@
  * #
  * # Date : 27th February 2017
  * #
- * # Description : This driver program for EntryWayListInterface.
+ * # Description : This driver program for LabFPartADriver.
  * #
  * ###############################################################################################################################
 */
