@@ -92,3 +92,9 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/gradle,intellij
+
+#Adding gradle ignores
+.gradle/3.5/taskHistory/fileHashes.bin
+.gradle/3.5/taskHistory/fileSnapshots.bin
+.gradle/3.5/taskHistory/taskHistory.bin
+.gradle/3.5/taskHistory/taskHistory.lock
