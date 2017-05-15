@@ -101,3 +101,4 @@ gradle-app.setting
 
 #Another intellij ignore
 .idea/kotlinc.xml
+.idea/misc.xml

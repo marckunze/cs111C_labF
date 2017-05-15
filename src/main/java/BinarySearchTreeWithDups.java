@@ -96,13 +96,26 @@ public class BinarySearchTreeWithDups<T extends Comparable<? super T>> extends B
 
   // ??? IMPLEMENT THIS METHOD
   public ArrayList<T> getAllEntriesRecursive(T searchVal) {
-    // this initial code is meant as a suggestion to get your started- feel
-    // free to use it or delete it!
-    BinaryNodeInterface<T> rootNode = getRootNode();
-    ArrayList<T> entryList = new ArrayList<T>();
-    // getAllEntriesHelper(searchVal, rootNode, entryList);
-
+    BinaryNodeInterface<T> rootNode = getRootNode(); //initialize with root node of tree
+    ArrayList<T> entryList = new ArrayList<T>(); //initialize entry list.
+    entryList = getAllEntriesHelper(searchVal, rootNode, entryList);
     return entryList;
+  }
+
+  private ArrayList<T> getAllEntriesHelper(T searchVal,BinaryNodeInterface<T> rootNode, ArrayList<T> entryList){
+    ArrayList<T>result = new ArrayList<>();
+    T foo = rootNode.getData();
+    if (searchVal.equals(foo)){
+      result.add(rootNode.getData());
+    }
+    if(rootNode.hasLeftChild()){
+      result.addAll(getAllEntriesHelper(searchVal,rootNode.getLeftChild(),entryList));
+    }
+    if(rootNode.hasRightChild()){
+      result.addAll(getAllEntriesHelper(searchVal,rootNode.getRightChild(),entryList));
+    }
+
+    return result;
   }
 
   // ??? IMPLEMENT THIS METHOD
