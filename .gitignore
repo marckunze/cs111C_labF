@@ -98,3 +98,6 @@ gradle-app.setting
 .gradle/**/taskHistory/fileSnapshots.bin
 .gradle/**/taskHistory/taskHistory.bin
 .gradle/**/taskHistory/taskHistory.lock
+
+#Another intellij ignore
+.idea/kolinc.xml
