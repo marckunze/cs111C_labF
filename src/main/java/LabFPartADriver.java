@@ -1,16 +1,12 @@
-/*
- * ###############################################################################################################################
- * #
- * # Version: 1.0
- * #
- * # Author: Victor Ramirez
- * #
- * # Date : 11th May 2017
- * #
- * # Description : This driver program for LabFPartADriver.
- * #
- * ###############################################################################################################################
-*/
+/**
+ * Driver program for CCSF LabF PartA
+ * Checks if Binary Search Tree which accepts duplicates is working
+ * @version 1.0
+ *
+ * @author Karen Feng
+ * @author Marc Kunze
+ * @author Victor Ramirez
+ */
 
 public class LabFPartADriver {
 

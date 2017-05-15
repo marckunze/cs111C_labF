@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @author Karen Feng
@@ -137,12 +134,28 @@ public class BinarySearchTreeWithDups<T extends Comparable<? super T>> extends B
 
   // ??? IMPLEMENT THIS METHOD
   public ArrayList<T> getAllEntriesLessThanRecursive(T searchVal) {
-    // this initial code is meant as a suggestion to get your started- feel
-    // free to use it or delete it!
     BinaryNodeInterface<T> rootNode = getRootNode();
     ArrayList<T> entryList = new ArrayList<T>();
-    // getAllEntriesLessThanHelper(searchVal, rootNode, entryList);
-
+    entryList = getAllEntriesLessThanHelper(searchVal, rootNode, entryList);
+    Collections.sort(entryList) ;
     return entryList;
+  }
+
+  private ArrayList<T> getAllEntriesLessThanHelper(T searchVal, BinaryNodeInterface<T> rootNode,
+                                                   ArrayList<T> entryList){
+    ArrayList<T>result = new ArrayList<>();
+    T foo = rootNode.getData();
+    if (searchVal.compareTo(foo) > 0){
+      result.add(foo);
+    }
+    if(rootNode.hasLeftChild()){
+      result.addAll(getAllEntriesLessThanHelper(searchVal,rootNode.getLeftChild(),entryList));
+    }
+    if(rootNode.hasRightChild()){
+      result.addAll(getAllEntriesLessThanHelper(searchVal,rootNode.getRightChild(),entryList));
+    }
+
+    return result;
+
   }
 }
