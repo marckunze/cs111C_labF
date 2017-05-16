@@ -27,6 +27,7 @@ Incident #76009802    Date: 12/22/2006 (Friday) tree:0 milliseconds.list: 1 mill
 
 Q5: How long did it take to build the tree? Why do you think was it faster/slower than in Q1?
 439533 milliseconds
+
 Q6. For each of the 7 days of the week, list the time it took to find those incidents using the tree and the time it took to find those incidents using the list. Why do you think it was faster/slower than in Q2?
 Sunday 51196 incidents tree: 169ms list: 70ms
 Monday 49486 incidents tree: 36ms list: 70ms
@@ -36,3 +37,5 @@ Thursday 52441 incidents tree: 36ms list: 15ms
 Friday 57693 incidents tree: 38ms list: 16ms
 Saturday 57633 incidents tree: 38ms list: 15 ms
 Q7: What happens? The number of elements in the tree has not changed. So why does this happen?
+450749 milliseconds
+The program is really slow. Recursive methods actually take up more memory because they have to call itself a bunch of times. Using more memory causes the program to run slower.
