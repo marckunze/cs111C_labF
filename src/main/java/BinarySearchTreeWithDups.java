@@ -132,19 +132,33 @@ public class BinarySearchTreeWithDups<T extends Comparable<? super T>> extends B
   }
 
   // ??? IMPLEMENT THIS METHOD
-  public ArrayList<T> getAllEntriesLessThanIterative(T searchVal) {
+  public ArrayList<T> getAllEntriesLessThanIterative(T searchVal) 
+  {
     // this initial code is meant as a suggestion to get your started- feel
     // free to use it or delete it!
     ArrayList<T> entryList = new ArrayList<T>();
+    
+    T foo = getRootNode().getData();
 
     // Hint: consider using a stack to mimic recursion!
-    // Stack<BinaryNodeInterface<T>> nodeStack = new
-    // Stack<BinaryNodeInterface<T>>();
-    // nodeStack.push(getRootNode());
-
-    // while(!nodeStack.isEmpty()) {
-    // }
-
+    Stack<BinaryNodeInterface<T>> nodeStack = new Stack<BinaryNodeInterface<T>>();
+    nodeStack.push(getRootNode());
+    
+    while(!nodeStack.isEmpty()) 
+    {
+       // compare values
+       
+       // if value greater than current node 
+       if (searchVal.compareTo(foo) > 0) 
+          nodeStack.push(getRootNode().getLeftChild());
+       // if value less than current node
+       else if (searchVal.compareTo(foo) < 0)
+          nodeStack.push(getRootNode().getRightChild());
+       else 
+       // return value
+          entryList = (ArrayList<T>) nodeStack.pop();          
+    }
+    
     return entryList;
   }
 
