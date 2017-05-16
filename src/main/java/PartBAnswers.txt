@@ -1,0 +1,38 @@
+Part B Answers
+Karen Feng, Victor Ramirez, Marc Kunze
+
+Q1: How long did it take to build the tree?
+    5503 milliseconds
+Q2. For each of the 6 dates, list the number of incidents, the time it took to find those incidents using the tree, and the time it took to find those using the list.
+    01/01/2003 72 incidents tree: 132ms list: 95ms
+    03/17/2004 53 incidents tree: 78ms list: 99ms
+    07/04/2005 59 incidents tree: 101ms list: 37ms
+    10/31/2006 70 incidents tree: 74ms list: 34ms
+    12/25/2007 44 incidents tree: 76ms list: 33ms
+    06/08/2008 74 incidents tree: 72ms list: 33ms
+Q3: How long did it take to build the tree? Why do you think was it faster/slower than in Q1?
+842 ms
+    
+Q4. For each of the 10 incident reports, list the time it took to find the report using the tree and the time it took to find the report using the list.
+Incident #40051972    Date: 1/12/2004 (Monday) tree: 0 milliseconds list: 4 milliseconds.
+Incident #140073852    Date: 1/24/2014 (Friday) tree: 0 milliseconds. list: 15 milliseconds.
+Incident #140699373    Date: 8/19/2014 (Tuesday) tree 0 milliseconds.list: 5 milliseconds.
+Incident #136110591    Date: 6/19/2013 (Wednesday)tree: 0 milliseconds.list: 4 milliseconds.
+Incident #51163401    Date: 10/15/2005 (Saturday)tree: 0 milliseconds.list: 1 milliseconds.
+Incident #120415456    Date: 5/25/2012 (Friday) tree: 0 milliseconds.list: 3 milliseconds.
+Incident #81133935    Date: 10/23/2008 (Thursday) tree: 0 milliseconds.list: 3 milliseconds.
+Incident #156063243    Date: 3/10/2015 (Tuesday) tree: 0 milliseconds.list: 5 milliseconds.
+Incident #110462633    Date: 6/8/2011 (Wednesday) tree: 0 milliseconds.list: 3 milliseconds.
+Incident #76009802    Date: 12/22/2006 (Friday) tree:0 milliseconds.list: 1 milliseconds.
+
+Q5: How long did it take to build the tree? Why do you think was it faster/slower than in Q1?
+439533 milliseconds
+Q6. For each of the 7 days of the week, list the time it took to find those incidents using the tree and the time it took to find those incidents using the list. Why do you think it was faster/slower than in Q2?
+Sunday 51196 incidents tree: 169ms list: 70ms
+Monday 49486 incidents tree: 36ms list: 70ms
+Tuesday 51263 incidents tree: 63ms list: 48ms
+Wednesday 52152 incidents tree: 37ms list: 16ms
+Thursday 52441 incidents tree: 36ms list: 15ms 
+Friday 57693 incidents tree: 38ms list: 16ms
+Saturday 57633 incidents tree: 38ms list: 15 ms
+Q7: What happens? The number of elements in the tree has not changed. So why does this happen?
