@@ -12,6 +12,7 @@ Q2. For each of the 6 dates, list the number of incidents, the time it took to f
     06/08/2008 74 incidents tree: 72ms list: 33ms
 Q3: How long did it take to build the tree? Why do you think was it faster/slower than in Q1?
 842 ms
+I think it was faster than Q1 because the list was already sorted.   
     
 Q4. For each of the 10 incident reports, list the time it took to find the report using the tree and the time it took to find the report using the list.
 Incident #40051972    Date: 1/12/2004 (Monday) tree: 0 milliseconds list: 4 milliseconds.
@@ -27,6 +28,8 @@ Incident #76009802    Date: 12/22/2006 (Friday) tree:0 milliseconds.list: 1 mill
 
 Q5: How long did it take to build the tree? Why do you think was it faster/slower than in Q1?
 439533 milliseconds
+I think it was slower than Q1 because it was doing more comparisons.
+
 
 Q6. For each of the 7 days of the week, list the time it took to find those incidents using the tree and the time it took to find those incidents using the list. Why do you think it was faster/slower than in Q2?
 Sunday 51196 incidents tree: 169ms list: 70ms
